@@ -29,7 +29,11 @@ function getDetails(html) {
 }
 
 async function getPage(url) {
-  const res = await axios.get(url);
+  const res = await axios.get(url, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0',
+    },
+  });
   return res.data;
 }
 
