@@ -32,7 +32,3 @@ To run the advanced example
 ```sh
 node advancedExample.js
 ```
-
-## Author
-
-
